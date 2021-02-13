@@ -13,12 +13,12 @@ public class Main {
         var str = new Scanner(System.in).nextLine();
 
         if (str.length() < width-1) {
-            for (int i = 0; i <= height; i++) {
-                for (int j = 0; j <= width; j++) {
-                    if ((i == 0) || (j == 0) || (i == height) || (j == width)) {
+            for (int i = 0; i < height; i++) {
+                for (int j = 0; j < width; j++) {
+                    if ((i == 0) || (j == 0) || (i == height - 1) || (j == width - 1)) {
                         System.out.print("*");
                     }
-                    else if ((i == (height / 2)) && (j >= (width - str.length()) / 2) &&
+                    else if ((i == ((height - 1) / 2)) && (j >= (width - str.length()) / 2) &&
                             (j <= ((width - str.length()) / 2) + str.length() - 1)) {
                         System.out.print(str.charAt(j - (width - str.length()) / 2));
                     }
