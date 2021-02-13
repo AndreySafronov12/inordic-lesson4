@@ -27,6 +27,6 @@ public class Main {
                 System.out.println();
             }
         }
-        else System.out.println("Ошибка! Текст не помещается.");
+        else System.out.println("Ошибка! Текст не помещается в рамку.");
     }
 }
