@@ -5,8 +5,11 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
+        System.out.print("Введите высоту :");
         int height = new Scanner(System.in).nextInt();
+        System.out.print("Введите ширину :");
         int width = new Scanner(System.in).nextInt();
+        System.out.print("Введите текст :");
         var str = new Scanner(System.in).nextLine();
 
         if (str.length() < width-1) {
